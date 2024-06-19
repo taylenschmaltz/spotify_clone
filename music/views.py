@@ -197,13 +197,14 @@ def search(request):
         querystring = {"term":search_query, "type": "track"}
 
         headers = {
-        "x-rapidapi-key": rapidapi_key,
-        "x-rapidapi-host": rapidapi_host
+            "x-rapidapi-key": rapidapi_key,
+            "x-rapidapi-host": rapidapi_host
         }
 
         response = requests.get(url, headers=headers, params=querystring)
 
         track_list = []
+        search_results_count = 0
 
         if response.status_code == 200:
             data = response.json()

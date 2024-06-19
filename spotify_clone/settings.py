@@ -20,8 +20,8 @@ load_dotenv()
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 #Env variables
-RAPIDAPI_KEY = os.getenv('x-rapidapi-key')
-RAPIDAPI_HOST = os.getenv('x-rapidapi-host')
+RAPIDAPI_KEY = os.getenv('RAPIDAPI_KEY')
+RAPIDAPI_HOST = os.getenv('RAPIDAPI_HOST')
 DJANGO_SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 DATABASE_NAME = os.getenv('DATABASE_NAME')
 DATABASE_USER = os.getenv('DATABASE_USER')
